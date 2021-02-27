@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
@@ -142,4 +141,23 @@ footer a:last-child {
 footer a:last-child:hover {
     text-decoration: none;
     color: tomato;
+}
+
+
+
+@media (max-width: 375px) {
+    .content {
+        width: 370px;
+        
+        border-radius: 10px;
+        box-shadow:5px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+            "section--community"
+            "section--monthly"
+            "section--why-us"
+        ;
+    }
 }
